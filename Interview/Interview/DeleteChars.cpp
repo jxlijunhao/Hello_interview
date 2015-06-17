@@ -1,0 +1,57 @@
+/************************************************************************/
+/* 在字符串中删除特定的字符
+
+   输入两个字符串，从第一字符串中删除第二个字符串中所有的字符。
+例如，输入”They are students.”和”aeiou”，则删除之后的第一个字符串变成”Thy r stdnts.”。
+*/
+/************************************************************************/
+
+//解题思路：先利用hash表将要删除的字符映射到hash表中，方便查找。然后，设立两个指针，
+//         pSearch,pReturn,一个用来查找当前字符是不是要被删除的，一个用来返回的
+//         怎么样删除：当pSearch指定的字符是要被删除的，那么将其值赋给pReturn,否则都各走一步
+
+#include<iostream> 
+using namespace std;
+
+void DeleteChars(char* pSource, char* pDelete)
+{
+	if (pSource==NULL || pDelete==NULL)
+		return;
+
+	 
+	int hashTable[256]={0};
+
+	//为pDelete字符串构造一个hash表
+	char* pchar=pDelete;
+	while('\0'!=*pchar)
+	{
+		hashTable[*pchar]++;
+		pchar++;
+	}
+
+	//开始利用pSearch进行查找
+	char* pSearch=pSource;
+	char* pReturn=pSource;
+	while ('\0'!=*pSearch)
+	{
+		if (hashTable[*pSearch]==0)//当前字符不需要被删除
+		{			
+			*pReturn=*pSearch;
+			pReturn++;
+		}
+		pSearch++;		 
+	}
+	*pReturn='\0';
+	
+}
+
+//int main()
+//{
+//	char pSource[]="They are students.";
+//	char pDelete[]="aeiou";
+//	DeleteChars(pSource,pDelete);
+//	cout<<pSource<<endl;
+//	return 0;
+//}
+
+ 

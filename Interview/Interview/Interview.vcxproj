@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67BF48E1-B638-4ECD-AE38-1A48BAA6F3C4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Interview</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BigNumMulti.cpp" />
+    <ClCompile Include="BitMap.cpp" />
+    <ClCompile Include="ClimbStairs.cpp" />
+    <ClCompile Include="CountSort.cpp" />
+    <ClCompile Include="DP_01pack.cpp" />
+    <ClCompile Include="DP_completePack.cpp" />
+    <ClCompile Include="DP_matrix.cpp" />
+    <ClCompile Include="DuplicatedNumber.cpp" />
+    <ClCompile Include="DutchFlags.cpp" />
+    <ClCompile Include="FindFirstNotDupChar_charStreaming.cpp" />
+    <ClCompile Include="FindGreatestSubArr.cpp" />
+    <ClCompile Include="FindNumberAppearOnce.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="Graph_Dijkstra.cpp" />
+    <ClCompile Include="Heap.cpp" />
+    <ClCompile Include="insert_sort.cpp" />
+    <ClCompile Include="InversePairs.cpp" />
+    <ClCompile Include="knapsack.cpp" />
+    <ClCompile Include="LongestDescend.cpp" />
+    <ClCompile Include="maxHeapSort_copy.cpp" />
+    <ClCompile Include="maxHeapSort_me.cpp" />
+    <ClCompile Include="MergeSort.cpp" />
+    <ClCompile Include="NumbersAppearHalf.cpp" />
+    <ClCompile Include="OddEven.cpp" />
+    <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="RoateMatrix.cpp" />
+    <ClCompile Include="SUM3.cpp" />
+    <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="CountChars.cpp" />
+    <ClCompile Include="DeleteChars.cpp" />
+    <ClCompile Include="DeleteNode_O1.cpp" />
+    <ClCompile Include="FindNumberWithSum.cpp" />
+    <ClCompile Include="FindNumberWithSum_Pro.cpp" />
+    <ClCompile Include="FirstAppearChar.cpp" />
+    <ClCompile Include="FirstCommonNode.cpp" />
+    <ClCompile Include="GetLastKNode.cpp" />
+    <ClCompile Include="GetLeastKNumbers.cpp" />
+    <ClCompile Include="IsPalindrome_list.cpp" />
+    <ClCompile Include="IsPalindrome_str.cpp" />
+    <ClCompile Include="MergeSortedArr.cpp" />
+    <ClCompile Include="MergeSortedList.cpp" />
+    <ClCompile Include="Permutation.cpp" />
+    <ClCompile Include="Str2Int.cpp" />
+    <ClCompile Include="StringContains.cpp" />
+    <ClCompile Include="test.c" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Top_K.cpp" />
+    <ClCompile Include="Tree_BinarySearch.cpp" />
+    <ClCompile Include="TwoStackQueue.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
